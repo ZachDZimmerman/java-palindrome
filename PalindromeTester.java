@@ -1,4 +1,10 @@
 public class PalindromeTester {
+  
+  public boolean isPalindrome(String input) {
+    // your code here
+    return false;
+  }
+  
   public static void main(String[] args) {
     printTestPalindrome("race car"); //true
     printTestPalindrome("wat"); //false
@@ -12,10 +18,5 @@ public class PalindromeTester {
   public static void printTestPalindrome(String input) {
     PalindromeTester tester = new PalindromeTester();
     System.out.println(input + ": " + tester.isPalindrome(input)); //true
-  }
-
-  public boolean isPalindrome(String input) {
-    // your code here
-    return false;
   }
 }
