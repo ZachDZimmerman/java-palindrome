@@ -1,3 +1,6 @@
+// run from the command line with: 
+// javac PalindromeTester.java && java PalindromeTester
+
 public class PalindromeTester {
   
   public boolean isPalindrome(String input) {
