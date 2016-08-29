@@ -1,13 +1,19 @@
-// run from the command line with: 
+// run from the command line with:
 // javac PalindromeTester.java && java PalindromeTester
 
 public class PalindromeTester {
-  
+
   public boolean isPalindrome(String input) {
-    // your code here
-    return false;
+   input = input.replaceAll("\\s","");
+   int n = input.length();
+     for (int i = 0; i < (n/2); i ++) {
+       if (input.charAt(i) != input.charAt(n-i-1)) {
+         return false;
+       }
+     }
+     return true;
   }
-  
+
   public static void main(String[] args) {
     printTestPalindrome("race car"); //true
     printTestPalindrome("wat"); //false
@@ -22,5 +28,12 @@ public class PalindromeTester {
     PalindromeTester tester = new PalindromeTester();
     System.out.println(input + ": " + tester.isPalindrome(input)); //true
   }
-  
 }
+
+ // String sanitized = input.replaceAll("//s","");
+ // String reverse = new StringBuffer(sanitized).reverse().toString();
+ // if (reverse.equals(sanitized)) {
+ //   return true;
+ // } else {
+ //  return false;
+ // }
