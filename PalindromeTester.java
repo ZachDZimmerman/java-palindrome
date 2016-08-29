@@ -19,4 +19,5 @@ public class PalindromeTester {
     PalindromeTester tester = new PalindromeTester();
     System.out.println(input + ": " + tester.isPalindrome(input)); //true
   }
+  
 }
